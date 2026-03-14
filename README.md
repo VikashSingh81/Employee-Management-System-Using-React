@@ -1,6 +1,6 @@
 # 🚀 Employee Management System (React)
 
-A modern **Employee Management System** built using **React, Context API, Tailwind CSS, and LocalStorage**.  
+A modern **Employee Management System** built using **React, Tailwind CSS, and LocalStorage**.  
 This application allows an **Admin to create and assign tasks to employees**, while employees can **view and manage their assigned tasks through a dedicated dashboard**.
 
 This project demonstrates **component-based architecture, role-based authentication, global state management, and persistent client-side storage**.
