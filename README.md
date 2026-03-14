@@ -1,16 +1,176 @@
-# React + Vite
+# 🚀 Employee Management System (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Employee Management System** built using **React, Context API, Tailwind CSS, and LocalStorage**.  
+This application allows an **Admin to create and assign tasks to employees**, while employees can **view and manage their assigned tasks through a dedicated dashboard**.
 
-Currently, two official plugins are available:
+This project demonstrates **component-based architecture, role-based authentication, global state management, and persistent client-side storage**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔐 Authentication
+- Admin Login
+- Employee Login
+- Role-based dashboard rendering
 
-## Expanding the ESLint configuration
+## 👨‍💼 Admin Dashboard
+- Create and assign tasks to employees
+- View all employees
+- Track task statistics
+- Monitor task status
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👩‍💻 Employee Dashboard
+Employees can view tasks categorized as:
+
+- 🆕 New Tasks  
+- ⚡ Active Tasks  
+- ✅ Completed Tasks  
+- ❌ Failed Tasks  
+
+## 📊 Task Management
+- Dynamic task creation
+- Task status tracking
+- Task statistics for each employee
+
+## 💾 Local Data Persistence
+- Uses **LocalStorage** to store employee and task data
+- Simulates backend functionality without server integration
+
+## 🎨 UI / UX
+- Clean dashboard layout
+- Responsive design
+- Styled using **Tailwind CSS**
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|--------|
+| React.js | Frontend framework |
+| JavaScript (ES6) | Application logic |
+| Tailwind CSS | UI styling |
+| LocalStorage | Data persistence |
+
+---
+
+# 📂 Project Structure
+
+```
+src
+│
+├── components
+│   ├── Auth
+│   │   └── Login.jsx
+│   │
+│   ├── Dashboard
+│   │   ├── AdminDashboard.jsx
+│   │   ├── EmployeeDashboard.jsx
+│   │   ├── Header.jsx
+│   │   ├── CreateTask.jsx
+│   │   └── AllTask.jsx
+│   │
+│   ├── TaskList
+│   │   ├── TaskList.jsx
+│   │   ├── NewTask.jsx
+│   │   ├── AcceptTask.jsx
+│   │   ├── CompleteTask.jsx
+│   │   └── FailedTask.jsx
+│
+├── context
+│   └── AuthProvider.jsx
+│
+├── utils
+│   └── localStorage.js
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+
+---
+
+# ⚙️ Installation & Setup
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/employee-management-system-react.git
+```
+
+Navigate to the project folder
+
+```bash
+cd employee-management-system-react
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+---
+
+# 🔑 Demo Credentials
+
+## Admin Login
+
+```
+Email: admin@gmail.com
+Password: 123
+```
+
+## Employee Login
+
+```
+Email: e@e.com
+Password: 123
+```
+
+---
+
+# 🎯 Learning Outcomes
+
+Through this project I have demonstrated my knowledge of:
+
+- React component architecture
+- Role-based UI rendering
+- Task management systems
+- Client-side data persistence using LocalStorage
+- Responsive UI design with Tailwind CSS
+
+---
+
+# 🔮 Future Improvements
+
+Potential improvements include:
+
+- Backend integration using **Node.js & Express**
+- Database integration with **MongoDB**
+- REST API implementation
+- JWT authentication
+- Real-time updates
+- Task notifications
+
+---
+
+# 👨‍💻 Author
+
+**Vikash Singh**
+
+GitHub:  
+https://github.com/YOUR_USERNAME
+
+---
+
+⭐ If you found this project useful, please consider giving it a **star** on GitHub!
